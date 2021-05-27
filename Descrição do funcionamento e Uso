@@ -1,0 +1,11 @@
+O projeto consiste em um sistema onde somente os cartões cadastrados terão o acesso liberado. Os cartões (tags) serão cadastrados no código e as informações de acesso serão salvas
+em um Feed via protocolo MQTT. Para isso, será utilizado um leitor RFID que realizará as leituras dos cartões, se o cartão estiver cadastrado, o leitor libera o acesso e será
+utilizado um relé para simular um equipamento, ou seja, quando o acesso é liberado o relé é aberto, e o led é acesso na cor verde indicando que o acesso foi concedido.
+Se o acesso for negado (tag não cadastrado no sistema)
+o relé continua fechado. 
+
+Passos: 
+1-) Cadastrar os cartões no código que será carregado no Arduino Uno.
+2-) Passar o cartão cadastrado no leitor RFID que realizará a leitura
+3-) Se o cartão estiver cadastrado, o acesso será liberado (Relé abre e led verde acende)
+4-) O NodeMcu registrará os dados lidos no serial e registrará no Feed (AdaFruit).
