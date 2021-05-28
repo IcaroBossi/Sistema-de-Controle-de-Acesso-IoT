@@ -1,0 +1,29 @@
+Hardware utilizado
+
+NodeMcu ESP8266 - O módulo Wifi NodeMcu ESP8266 é uma placa de desenvolvimento com chip ESP8266, uma interface serial USB e um regulador de tensão de 3,3V. É possível utilizar LUA ou Arduino IDE para programar e se comunicar por meio de um cabo micro-usb (FILIPEFLOP, 2016).  O diferencial desse modulo é que já possui capacidade de se comunicar a uma rede Wifi, não sendo necessário a utilização de um Shield, como no Arduíno, por exemplo.
+No projeto é responsável por realizar a comunicação Wifi via protocolo MQTT com um Broker da AdaFruit com o objetivo de registrar os dados lidos dos cartões via RFID.
+
+Arduino Uno R3 - O Arduino é uma plataforma de desenvolvimento de projetos eletrônicos (ou prototipagem eletrônica, como também é comumente dito), constituída tanto de hardware e software. O principal componente de uma placa Arduino é seu microcontrolador, que nada mais é que um pequeno processador de computador montado em uma placa com diversos outros componentes que manipulam sua entrada e saída, e o propósito para isso é tornar mais fácil para você conectar o mundo físico ao seu redor com o mundo digital. (LOUSADA, 2020).
+Algumas vantagens de utilizar o Arduino: baixo custo de prototipagem, softwares de simulação gratuitos disponíveis, extensa comunidade de desenvolvedores. No projeto o Arduino é utilizado para controlar o módulo RFID, o modulo relé e o led. 
+
+Leitor RFID MFRC522 Mifare - O leitor MFRC522 Mifare é um leitor de tags RFID de 13,56 MHz com interface SPI para troca de dados com um microcontrolador. RFID é uma tecnologia de identificação por radiofrequência de curto alcance, amplamente utilizada no controle de acesso, sistemas de bilhetagem de transporte público etc. É composto por dois elementos, um Tag ou etiqueta RFID que possui um Id único e um leitor RFID que faz a leitura e pode até fazer a escrita de alguma informação no Tag (OLIVEIRA, 2019).
+No projeto será responsável pela leitura dos Tags.
+
+Módulo Relé 5V 2 Canais - Os reles são basicamente dispositivos elétricos que se configuram como um contato que abre e fecha de acordo com um comando (ATHOS ELECTRONICS, 2019). O Módulo Relé 5V de 2 Canais permite que a partir de uma plataforma microcontrolada seja possível controlar cargas AC (alternada) de forma simples e prática. Por ter 2 canais, é possível controlar até duas cargas AC de até 10ª (OLIVEIRA, 2020). No projeto, o relé estará inicialmente fechado e quando um Tag cadastrado passar no sensor RFID, o relé abrirá o contato.
+Foi utilizado somente 1 canal no projeto.
+
+LED Difuso 5mm Verde - Led é um componente eletrônico que tem como principal característica a emissão de luz. É um diodo de junção PN, que difere de outros diodos principalmente porque emite luz. Os LEDs são polarizados. Na maioria dos casos, os LEDs têm dois terminais, positivo ou ânodo / ânodo (terminal maior) e negativo ou cátodo / cátodo (terminal menor) (DOS REIS, 2019).
+No projeto, é utilizado um led verde (para quando o acesso for liberado, ou seja, Tag cadastrado).
+
+Resistor - São dispositivos usados para controlar a passagem de corrente elétrica em circuitos elétricos através do efeito Joule, convertendo assim, energia elétrica em energia térmica (HELERBROCK).
+No projeto, foi utilizado 1 (Um) resistor de 1KΩ para controlar a passagem de corrente elétrica para os Led.
+
+Protoboard EIC – 102B - É uma placa utilizada para montagem e teste de circuitos. Com essa placa, não é necessário soldar nenhum componente. (ATHOS ELECTRONICS)
+O Protoboard possui trilhas na vertical, onde são utilizadas para a alimentação do circuito e trilhas na horizontal utilizadas para montagem do circuito
+A montagem do projeto foi feita utilizando um Protoboard.
+
+Fios Jumpers - Jumper é um pequeno condutor utilizado para conectar dois pontos de um circuito eletrônico. Foram utilizados jumpers macho-macho e macho-fêmea para fazer todas as conexões do projeto.
+
+
+
+
