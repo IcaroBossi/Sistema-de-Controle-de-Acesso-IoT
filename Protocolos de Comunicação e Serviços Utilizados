@@ -1,0 +1,17 @@
+	Protocolos de Comunicação e Serviços Utilizados
+  
+O protocolo utilizado no projeto foi o MQTT. O MQTT é um protocolo simples e de fácil implementação; sua aplicação leve é ideal para a comunicação remota entre dispositivos
+onde a quantidade de dados comunicados é altamente limitada, e, em redes cuja largura da banda para a comunicação é restrita e de alta latência, o que justifica seu
+desenvolvimento em cima de vários conceitos que garantam uma alta performance; é seguro, portanto escalável em ambiente de redes instável; flexível, uma vez que suporta
+diversificadas aplicações para dispositivos e serviços de IoT; e suas bibliotecas são suportadas por várias linguagens de programação. 
+Tais características que contemplam versatilidade e compatibilidade motivam a implementação do MQTT em dispositivos e sistemas embarcados, 
+tornando-o uma ótima opção para comunicação entre os dispositivos de Internet das Coisas (BASÍLIO, 2020).
+
+Foi utilizado o AdaFruit IO MQTT Broker no projeto. Foi criado um Feed, onde fica registrado todas as leituras dos cartões feitas com o leitor RFID. 
+A conexão com o broker foi feita através do NodeMCU.
+
+Passos para criar o Feed no AdaFruit:
+1-) Criar uma conta no AdaFruit: https://io.adafruit.com/
+2-) Clicar em AIO Key e guardar sua chave e seu username , pois são utilizados no código para fazer a conexão.
+3-) Crie um novo Dashboard
+4-) Crie um novo Feed
